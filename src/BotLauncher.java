@@ -12,7 +12,6 @@ public class BotLauncher extends ListenerAdapter {
 
         jda = JDABuilder.create(Config.KEY_TOKEN, EnumSet.allOf(GatewayIntent.class)).build();
 
-        jda.addEventListener(new BotLauncher());
         jda.addEventListener(new Commands());
 
     }
